@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: resolve(__dirname, 'index.html'), // এটির মাধ্যমে তুমি এন্ট্রি ফাইল সঠিকভাবে সেট করছো
+      input: resolve(__dirname, 'public/index.html'), // public ফোল্ডারের ভিতর index.html
     },
-    outDir: 'dist',  // প্রোডাকশন বিল্ডের আউটপুট ডিরেক্টরি
+    outDir: 'dist',
   },
 });
