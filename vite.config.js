@@ -6,8 +6,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: resolve(__dirname, 'public/index.html'), // public ফোল্ডারের ভিতর index.html
+      input: resolve(__dirname, 'public/index.html'),
     },
     outDir: 'dist',
+  },
+  css: {
+    postcss: './postcss.config.js', // postcss config ফাইল যদি থাকে
   },
 });
